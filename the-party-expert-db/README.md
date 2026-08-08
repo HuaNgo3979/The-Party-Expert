@@ -7,7 +7,7 @@
 > sales-forecasting model in Orange.
 
 **Tech:** MySQL Workbench· SQL (DDL, DML, Views, Functions, Procedures, Triggers, CTEs) · Orange (data mining) ·
-Entity–Relationship modelling · Relational modelling · Normalisation
+Entity-Relationship modelling (ER modelling) · Normalisation
 
 ---
 
