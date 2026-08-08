@@ -55,7 +55,7 @@ the-party-expert-db/
 │
 ├── docs/
 │   ├── reports/                  ← Part A & Part B written reports (PDF)
-│   └── diagrams/                 ← ERD + relational model images
+│   └── diagrams/                 ← Images: ERD + Relational model, Orange's predictive models + outputs
 │
 ├── sql/
 │   ├── part-a/                   ← schema + 5 business queries
@@ -73,8 +73,7 @@ the-party-expert-db/
 │       └── 05_nested_query_top_supplier_type_per_party.sql
 │
 └── orange/
-    ├── workflow/                 ← Orange .ows workflow
-    └── data/                     ← dataset + header description
+    └── workflow/                 ← Orange .ows workflow
 ```
 ---
 
