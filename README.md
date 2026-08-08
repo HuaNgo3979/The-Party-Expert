@@ -8,7 +8,7 @@ database) and **Orange** (for the sales-forecasting analytics). Here's how to se
 | Tool | Purpose | Download |
 |------|---------|----------|
 | MySQL (Server + Workbench) | Create the database and run the SQL scripts | https://dev.mysql.com/downloads/ |
-| Orange | Open the analytics workflow and reproduce the models | https://orangedatamining.com/download/ |
+| Orange | Open the analytics workflow (dataset not included — see note below) | https://orangedatamining.com/download/ |
 
 ---
 
@@ -53,9 +53,22 @@ MySQL comes with **Workbench**, a visual editor where you'll run the scripts.
 
 ### 4. Run the analytics (Orange)
 
-1. Open the workflow in [`orange/workflow/`](https://github.com/HuaNgo3979/The-Party-Expert/tree/main/the-party-expert-db/orange) with Orange.
-2. The dataset is not provided due to its confidentials, you can try on a different dataset 
-3. Run the pipeline to reproduce the cleaning, exploration and model comparison.
+> **Note on the dataset:** the sales dataset used for this study was provided by RMIT as course
+> material, so it is **not included** in this public repository. To keep the analytics reproducible,
+> the Orange workflow and result screenshots are shared instead.
+
+The analytics were built in Orange using this pipeline:
+
+`File → Impute → Select Columns → (Box Plot / Distributions / Feature Statistics) → Test & Score → Prediction`
+
+- Workflow file: [`orange/workflow/`](https://github.com/HuaNgo3979/The-Party-Expert/tree/main/the-party-expert-db/orange)
+- Result screenshots: [`docs/diagrams/`](https://github.com/HuaNgo3979/The-Party-Expert/tree/main/the-party-expert-db/docs/diagrams)
+
+**Summary of results:** after cleaning (~0.2% missing values imputed; target rows removed → 1,992
+records), three models were compared with 5-fold cross-validation. **Linear Regression** was the best
+fit — **R² ≈ 0.991**, lowest RMSE/MAE — ahead of Random Forest (R² ≈ 0.990) and kNN (R² ≈ 0.967).
+
+*The dataset is available on request for academic review — please reach out via the contact details below.*
 
 > Full walkthrough and results are in the reports under
 > [`docs/reports/`](https://github.com/HuaNgo3979/The-Party-Expert/tree/main/the-party-expert-db/docs/reports).
