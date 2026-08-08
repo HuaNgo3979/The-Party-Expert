@@ -1,13 +1,13 @@
 # The Party Expert — Relational Database Design & Analytics
 
 > An end-to-end MySQL database solution and predictive-analytics study for a Melbourne event-planning
-> company, built as a university team project for **ISYS2038 Database Design & Development** (RMIT,
-> Semester A 2025). Covers data modelling, a normalised schema, a full data dictionary, ten
+> company, built as a university team project for **ISYS2038 Database Design & Development**.
+> Covers data modelling, a normalised schema, a full data dictionary, ten
 > business-driven SQL queries (standard + advanced), a database-administration review, and a
 > sales-forecasting model in Orange.
 
-**Tech:** MySQL · SQL (DDL, DML, Views, Functions, Procedures, Triggers, CTEs) · Orange (data mining) ·
-Entity–Relationship modelling · Normalisation
+**Tech:** MySQL Workbench· SQL (DDL, DML, Views, Functions, Procedures, Triggers, CTEs) · Orange (data mining) ·
+Entity–Relationship modelling · Relational modelling · Normalisation
 
 ---
 
