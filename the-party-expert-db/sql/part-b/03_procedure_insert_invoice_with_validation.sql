@@ -32,6 +32,38 @@ END $$
 
 DELIMITER ;
 
--- Test:
---   Valid   -> CALL insert_invoice_with_validation(5184,'Final', 9500.00,'2025-06-15','Pending','Card');
---   Invalid -> CALL insert_invoice_with_validation(5184,'Deposit',-200.00,'2025-06-10','Pending','Bank Transfer');
+-- Testing SQL3: PROCEDURE
+-- Step 1: Call the procedure with a VALID amount (should succeed)
+-- CALL insert_invoice_with_validation(
+--    5184,               -- Party_ID
+--    'Final',            -- Invoice_Type
+--    9500.00,            -- Amount (valid)
+--    '2025-06-15',       -- Invoice_Date
+--    'Pending',          -- Payment_Status
+--    'Card'              -- Payment_Method
+-- );
+--
+-- Step 2: Check the inserted invoice (only the valid one should appear)
+-- SELECT * FROM Invoice
+-- WHERE Party_ID = 5184
+-- ORDER BY Invoice_Date DESC;
+--
+-- Step 3: Try another valid test with a different amount
+-- CALL insert_invoice_with_validation(
+--    5184,
+--    'Final',
+--    12345.67,
+--    '2025-06-20',
+--    'Paid',
+--    'PayPal'
+-- );
+--
+-- Step 4: Call the procedure with an INVALID amount (should error)
+-- CALL insert_invoice_with_validation(
+--    5184,
+--    'Deposit',
+--    -200.00,             -- Invalid amount
+--    '2025-06-10',
+--    'Pending',
+--    'Bank Transfer'
+-- );
