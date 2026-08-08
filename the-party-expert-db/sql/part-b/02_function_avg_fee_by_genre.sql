@@ -43,5 +43,5 @@ DELIMITER ;
 -- Step 4: Cross-check manually
 --   SELECT Genre, AVG(Normal_Fee) AS Manual_Avg
 --   FROM Entertainer
---   GROUP BY Genre
+--   GROUP BY Genre;
 -- If the results match the function output, the function works as expected.
