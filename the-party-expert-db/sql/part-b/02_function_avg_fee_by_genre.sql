@@ -31,9 +31,17 @@ END$$
 
 DELIMITER ;
 
--- Test examples:
---   SELECT avg_fee_by_genre('Funk')  AS Avg_Funk_Fee;
---   SELECT avg_fee_by_genre('Pop')   AS Avg_Pop_Fee;
+-- Testing SQL2: FUNCTION
+-- Step 1: View available genres
+--   SELECT DISTINCT Genre FROM Entertainer;
+-- Step 2: Call the function with a known genre
+--   SELECT avg_fee_by_genre('Funk') AS Avg_Funk_Fee;
+--   SELECT avg_fee_by_genre('Pop') AS Avg_Pop_Fee;
 --   SELECT avg_fee_by_genre('HipHop') AS Avg_HipHop_Fee;
--- Cross-check:
---   SELECT Genre, AVG(Normal_Fee) AS Manual_Avg FROM Entertainer GROUP BY Genre;
+-- Step 3: Test with an unknown or unused genre (should return NULL)
+--   SELECT avg_fee_by_genre('Aucostic') AS Avg_Aucostic_Fee;  -- If no entertainers in this genre
+-- Step 4: Cross-check manually
+--   SELECT Genre, AVG(Normal_Fee) AS Manual_Avg
+--   FROM Entertainer
+--   GROUP BY Genre
+-- If the results match the function output, the function works as expected.
