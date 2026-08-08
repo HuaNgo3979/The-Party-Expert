@@ -72,14 +72,10 @@ the-party-expert-db/
 │       ├── 04_trigger_prevent_future_resign.sql
 │       └── 05_nested_query_top_supplier_type_per_party.sql
 │
-├── orange/
-│   ├── workflow/                 ← Orange .ows workflow
-│   └── data/                     ← dataset + header description
-│
-└── assets/
-    └── screenshots/              ← optional query/result screenshots
+└── orange/
+    ├── workflow/                 ← Orange .ows workflow
+    └── data/                     ← dataset + header description
 ```
-
 ---
 
 ## Database design
