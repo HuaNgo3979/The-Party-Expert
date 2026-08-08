@@ -1,4 +1,4 @@
-# The Party Expert — Relational Database Design & Analytics
+# The Party Expert - Relational Database Design & Analytics
 
 > An end-to-end MySQL database solution and predictive-analytics study for a Melbourne event-planning
 > company, built as a university team project for **ISYS2038 Database Design & Development**.
@@ -21,9 +21,9 @@ answer real operational questions and to forecast sales.
 
 The work is delivered in two parts:
 
-- **Part A — Foundations.** Business problem analysis, Entity–Relationship Diagram (ERD), relational
+- **Part A - Foundations.** Business problem analysis, Entity–Relationship Diagram (ERD), relational
   model, a complete data dictionary, and five business SQL queries (with table creation and test data).
-- **Part B — Advanced.** Five advanced SQL objects (View, Function, Stored Procedure, Trigger, nested
+- **Part B - Advanced.** Five advanced SQL objects (View, Function, Stored Procedure, Trigger, nested
   CTE query), a database-administration review (privacy, integrity and backup strategy), and a
   predictive-analytics study in Orange comparing three models.
 
