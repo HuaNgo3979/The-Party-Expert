@@ -1,7 +1,6 @@
 # SQL scripts
 
-Reconstructed from the project reports so the repo runs out of the box. **Please verify
-each script against your own working `.sql` files** — screenshots can hide small details.
+Reconstructed from the project reports so the repo runs out of the box.
 
 Two things were cleaned up for a public repo:
 1. The `s3863887.` schema prefix was removed, so scripts run in any database you select
