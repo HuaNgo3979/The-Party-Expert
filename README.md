@@ -178,11 +178,12 @@ interpretability.
 
 This was a four-person team project. My personal contribution across both parts was:
 
-- **Designing the data dictionary** — data types, sizes, keys and integrity constraints for all ten
+- **Designing the data dictionary**: data types, sizes, keys and integrity constraints for all ten
   tables.
-- **Authoring the SQL** — the five Part A business queries and the five Part B advanced SQL objects
+- **Authoring the SQL**: the five Part A business queries and the five Part B advanced SQL objects
   (view, function, procedure, trigger, nested CTE).
-- **Writing the business rationale** — the purpose, value and impact narrative for every query.
+- **Writing the business rationale**: the purpose, value and impact narrative for every query.
+- **Database implementation**: implement queries and validates results & analytics
 
 Full team credits are below.
 
@@ -196,9 +197,7 @@ Delivered by a team of four RMIT students acting as analysts at "Best Innovative
   explanations *(repository author)*
 - **Nguyen Ngoc Thao My** — Data modelling (ERD & relational model), database-administration approaches
 - **Maria Del Rosario Vargas Ramos** — Introduction, business assumptions & rules, Orange analytics
-- **Dang Nguyen Huy Nhat** — Database implementation, SQL support, report presentation
-
-Course: ISYS2038 Database Design & Development, RMIT University · Semester A 2025.
+- **Dang Nguyen Huy Nhat** — SQL support, report presentation
 
 ---
 
@@ -216,7 +215,6 @@ The company, dataset and scenario are a simulated teaching case study — no rea
 
 **Hua Quoc Thinh, Ngo (Williams Ngo)** — Business Analyst / Data Analyst / BI Analyst, Melbourne
 
-- Portfolio: https://huango3979.github.io/e-Portfolio/
-- LinkedIn: https://linkedin.com/in/hua-quoc-thinh-ngo-713b42232
+- LinkedIn: [https://linkedin.com/in/hua-quoc-thinh-ngo-713b42232](https://www.linkedin.com/in/hua-quoc-thinh-ngo-713b42232/)
 - GitHub: https://github.com/huango3979
 - Email: quocthinh231021@gmail.com
